@@ -43,8 +43,7 @@ app.get('/', async (_,res) => {
   console.log({ people })
 
   res.send(`
-    <p>Full Cycle!</p> <br /> 
-    <p>- Lista de nomes cadastrados no banco de dados.</p>
+    <p>Full Cycle Rocks!</p>
     ${people.map(p => (
       `<p>- ${p.name}</p>`
     )).join('')}
